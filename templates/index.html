@@ -1,0 +1,302 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block cta %}
+<div class="container hero">
+        <div class="row">
+            <div class="col-12 col-lg-6 col-xl-5 offset-xl-1">
+                <h1>Welcome to MechTech</h1>
+                <p> We connect you to the most talented mechanics in the country.
+                    Our services are convinient and affordable.
+                    We also have shop for you to buy any car repair </p>
+                    <a href="{% url 'appointment' %}" class="btn btn-danger btn-lg action-button" type="button">Request A mechanic</a>
+            </div>
+
+        </div>
+    </div>
+
+{% endblock cta %}
+{% block content %}
+ 
+<!-- Services -->
+<section id="services">
+  <div class=" text-center py-5 mb-4"  style="background-color:black;">
+      <div class="container">
+        <h1 class="fw-light text-white"> Our Services</h1>
+        <p class="overview" style="color:white;">Life’s too short to spend it at the repair shop <span style="color:#f16000; font-weight: bold;">MechTech</span> Will repair your car from your home, office, or any other place your car can broke at.
+        </p>
+      </div>
+    </div>
+  <div class="container">
+    <div class="row">
+      <!-- Team Member 1 -->
+      <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-0 shadow">
+          <img src="{% static 'img/easy.png' %}" class="card-img-top" alt="..." style="width:50px;margin-left: 40%;">
+          <div class="card-body text-center">
+            <h5 class="card-title mb-0">WE MAKE IT EASY</h5>
+            <div class="card-text text-black-50">Get a quote and book a service online 24/7. Our mechanics will come to your home or office, even on evenings and weekends.</div>
+          </div>
+        </div>
+      </div>
+      <!-- Team Member 2 -->
+      <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-0 shadow">
+          <img src="{% static 'img/money.png' %}" class="card-img-top" alt="..." style="width:40px;margin-left: 40%;">
+          <div class="card-body text-center">
+            <h5 class="card-title mb-0">FAIR AND TRANSPARENT PRICING</h5>
+            <div class="card-text text-black-50">We offer fair and transparent pricing and provide estimates upfront for hundreds of services on thousands of cars</div>
+          </div>
+        </div>
+      </div>
+      <!-- Team Member 3 -->
+      <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-0 shadow">
+          <img src="{% static 'img/faster.png' %}" class="card-img-top" alt="..."style="width:40px;margin-left: 40%;">
+          <div class="card-body text-center">
+            <h5 class="card-title mb-0">FASTER TO GET TO YOU</h5>
+            <div class="card-text text-black-50">As soon as you call, our agent will reach out to you and help you as soon as we can. All our agents are hear to support you</div> </div>
+        </div>
+      </div>
+      <!-- Team Member 4 -->
+      <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-0 shadow">
+          <img src="{% static 'img/happy.png' %}" class="card-img-top" alt="..."style="width:40px;margin-left: 40%;">
+          <div class="card-body text-center">
+            <h5 class="card-title mb-0">HAPPINESS GUARANTEED</h5>
+            <div class="card-text text-black-50">We only work with highly rated mechanics.All services are backed by our 12-month / 12,000-mile warranty.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.row -->
+  </div>
+</section>
+<!-- about us -->
+<div style="background-color:rgba(0, 0, 0, 0.11);color: black;height: 100vh;margin-top:60px">
+  <P style="text-align:center; font-weight:bold; font-size: 30px;">You can Request our Services From  Here</P>
+  <div class="container">
+    <div class="row">
+      <div class="col-4">
+        <div>
+          <img src="{% static 'img/happy.png' %}" class="card-img-top" alt="..."style="width:40px;margin-left: 20%;">
+          <h5 style="font-weight:bold;">Engine And Transmission Repair</h5>
+          <p>The mechanics at Mobile Mechanics are trained to inspect, diagnose and repair any engine related problem.</p>
+          <a href="{% url 'appointment' %}" class="btn btn-lg action-button" type="button" style="background-color:#f16000;color: white;">Request A Service</a>
+        </div>
+      </div>
+      <div class="col-4">
+        <div>
+          <img src="{% static 'img/happy.png' %}" class="card-img-top" alt="..."style="width:40px;margin-left: 20%;">
+          <h5 style="font-weight:bold;">Brake Service And Repair</h5>
+          <p>The mechanics at Mobile Mechanics are trained to inspect, diagnose and repair braking systems of any kind.</p>
+          <a href="{% url 'appointment' %}" class="btn btn-lg action-button" type="button" style="background-color:#f16000;color: white;">Request A Service</a>
+
+        </div>
+      </div>
+      <div class="col-4">
+        <div>
+          <img src="{% static 'img/happy.png' %}" class="card-img-top" alt="..."style="width:40px;margin-left: 20%;">
+          <h5 style="font-weight:bold;">Tires/Wheels Sales And Service</h5>
+          <p>We provide you with the best tire fit for your vehicle. Our tire services include sell of new tires, change tires, repair punctures.</p>
+          <a href="{% url 'appointment' %}" class="btn btn-lg action-button" type="button" style="background-color:#f16000;color: white;">Request A Service</a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container" style="margin-top:60px">
+    <div class="row">
+      <div class="col-4">
+        <div>
+          <img src="{% static 'img/happy.png' %}" class="card-img-top" alt="..."style="width:40px;margin-left: 20%;">
+          <h5 style="font-weight:bold;">Heating And AC Repairs</h5>
+          <p>Our heating and air conditioning (HVAC) mechanics will repair any HVAC problems</p>
+          <a href="{% url 'appointment' %}" class="btn btn-lg action-button" type="button" style="background-color:#f16000;color: white;">Request A Service</a>
+
+        </div>
+      </div>
+      <div class="col-4">
+        <div>
+          <img src="{% static 'img/happy.png' %}" class="card-img-top" alt="..."style="width:40px;margin-left: 20%;">
+          <h5 style="font-weight:bold;">Batteries And Charging Systems</h5>
+          <p>Let our technicians recommend the right repair solution, and efficiently complete the repair.</p>
+          <a href="{% url 'appointment' %}" class="btn btn-lg action-button" type="button" style="background-color:#f16000;color: white;">Request A Service</a>
+
+        </div>
+      </div>
+      <div class="col-4">
+        <div>
+          <img src="{% static 'img/happy.png' %}" class="card-img-top" alt="..."style="width:40px;margin-left: 20%;">
+          <h5 style="font-weight:bold;">Steering, Suspension & Wheel Alignment</h5>
+          <p>Our technicians will diagnose and repair steering, suspension and wheel alignement related issues.</p>
+          <a href="{% url 'appointment' %}" class="btn btn-lg action-button" type="button" style="background-color:#f16000;color: white;">Request A Service</a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="container py-5"  style="margin-block:200px;" id="team">
+  
+  <div class="row text-center ">
+      <div class="col-lg-8 mx-auto">
+          <h1 class="display-4">About Us</h1>
+          <p class="lead"> MechTech offers quality, affordable, and timely auto repair services for drivers. Each day, the people of mechtech feel thankful. 
+            We know that together we are repairing not just cars, but lives: restoring hope and opportunity by helping people get to adventure destinations,
+            school and jobs as an important step toward a more promising and secure future.
+          </p>
+      </div>
+  </div>
+  <h1 class="display-4" style="text-align:center">Our Team</h1>
+  <div class="container">
+      <div class="row text-center">
+
+          <!-- Team item -->
+          <div class="col-xl-3 col-sm-6 mb-5">
+              <div class="bg-white rounded shadow-sm py-5 px-4"><img src="{% static 'img/jeannine.jpg' %}" alt="" class=" mh-100img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                  <h5 class="mb-0">Jeannine Uwase</h5>
+                  <span class="small text-uppercase text-muted">CEO & Co-founder</span>
+              </div>
+          </div><!-- End -->
+
+          <!-- Team item -->
+          <div class="col-xl-3 col-sm-6 mb-5">
+              <div class="bg-white rounded shadow-sm py-5 px-4"><img src="{% static 'img/Celine.jpg' %}" alt="" class=" mh-100img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                  <h5 class="mb-0">CTO</h5>
+                  <span class="small text-uppercase text-muted">Gushima Celine</span>
+              </div>
+          </div><!-- End -->
+ <!-- Team item -->
+ <div class="col-xl-3 col-sm-6 mb-5">
+  <div class="bg-white rounded shadow-sm py-5 px-4"><img src="{% static 'img/papy.jpg' %}" alt="" class=" mh-100 rounded-circle mb-3 img-thumbnail shadow-sm">
+      <h5 class="mb-0">Biganza Papy </h5>
+      <span class="small text-uppercase text-muted">Business Advisor</span>
+  </div>
+</div><!-- End -->
+
+          <!-- Team item -->
+          <div class="col-xl-3 col-sm-6 mb-5">
+              <div class="bg-white rounded shadow-sm py-5 px-4"><img src="{% static 'img/mechanic.jpg' %}" alt="" class=" mh-100img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                  <h5 class="mb-0">Murenzi David</h5>
+                  <span class="small text-uppercase text-muted">Car mechanic</span>
+              </div>
+          </div><!-- End -->
+      </div>
+  </div>
+</section><!-- End -->
+
+<!-- Satisfied Patients -->
+<section class="text-center conatiner" style="margin-block:200px;" id="reviews">
+    <h2>Satisfied Drivers</h2>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Carousel indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>   
+        <!-- Wrapper for carousel items -->
+        <div class="carousel-inner">		
+            <div class="carousel-item active">
+                <div class="img-box"><img src="{% static 'img/juyes.jpeg' %}" alt=""></div>
+                <p class="testimonial">It ended up costing about half of what it would have cost otherwise. And then when it came time to buy another car, the mechanic came out twice to check out cars and give me a full report over the phone. Really affordable. And it really worked out well for us. We did not have to make time to take our car somewhere and drop it off to be repaired.</p>
+                <p class="overview">Michael Holz</p>
+            </div>
+            <div class="carousel-item">
+                <div class="img-box"><img src="{% static 'img/patient2.jpg' %}" alt=""></div>
+                <p class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Vestibulum idac nisl bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet.</p>
+                <p class="overview">Antonio Moreno</p>
+            </div>
+            <div class="carousel-item">
+                <div class="img-box"><img src="{% static 'img/patient3.jpg' %}" alt=""></div>
+                <p class="testimonial">Vestibulum quis quam ut magna consequat faucibus. Pellentesque eget nisi a mi suscipit tincidunt. Utmtc tempus dictum risus. Pellentesque viverra sagittis quam at mattis. Suspendisse potenti. Aliquam sit amet gravida nibh, facilisis gravida odio. Phasellus auctor velit.</p>
+                <p class="overview">Paula Wilson</p>   
+            </div>		
+        </div>
+    </div>
+</section>
+<div class=" text-center py-5 mb-4"  style="background-color:black;">
+  <div class="container">
+    <h1 class="fw-light text-white"> How Can We Help?</h1>
+    <h5 class="overview" style="color:white;">Our service team is available 7 days a week:</h5>
+    <h5 style="color:white;">Our service team is available 7 days a week:<span style="margin-left:20px;">Monday - Friday 6 AM to 5 PM EAT Also Saturday - Sunday 7 AM - 4 PM EAT</span></h5>
+    <h5 style="color:#f16000;"><span style="color:white;">Phone:</span>+250785952374<span style="margin:20px;"> <span style="color:white;">Email:</span>jeannineuwasee@gmail.com</span></h5>
+  </div>
+</div>
+<section id="contact" class="card m-4 p-4">
+    <div class="container">
+        <div class="row text-center">
+
+            <div class="col-sm-6">
+            <div class="contact-detail-box">
+              <i class="far fa-envelope text-colored fa-3x"></i>
+              <h4>Get In Touch</h4>
+              <abbr title="Phone">P:</abbr> (+250) 785952374<br>
+              E-mail: <a href="mailto:email@email.com" class="text-muted">jeannineuwase@email.com</a>
+            </div>
+          </div><!-- end col -->
+  
+          <div class="col-sm-6">
+            <div class="contact-detail-box">
+              <i class="fa fa-map-marker fa-3x text-colored"></i>
+              <h4>Our Location</h4>
+  
+              <address>
+              Kagugu, Kicukiro<br>
+              Kigali, Rwanda<br>
+            </address>
+            </div>
+          </div><!-- end col -->
+  
+  
+  
+        </div>
+        <!-- end row -->
+  
+  
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="contact-map">
+              <iframe src="https://www.google.com/maps/embed/v1/place?q=New+York+University&amp;key=AIzaSyBSFRN6WWGYwmFi498qXXsD2UwkbmD74v4" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" style="width: 100%; height: 360px;"></iframe>
+            </div>
+          </div><!-- end col -->
+  
+          <!-- Contact form -->
+          <div class="col-sm-6">
+            <form role="form" name="ajax-form" id="ajax-form" method="post" class="form-main" action="{% url 'home' %}">
+            {% csrf_token %}
+              <div class="form-group">
+                <label for="name2">Name</label>
+                <input class="form-control" id="name2" name="name" type="text" placeholder="name">
+                <div class="error" id="err-name" style="display: none;">Please enter name</div>
+              </div> <!-- /Form-name -->
+  
+              <div class="form-group">
+                <label for="email2">Email</label>
+                <input class="form-control" id="email2" name="email" type="text" placeholder="email">
+                <div class="error" id="err-emailvld" style="display: none;">E-mail is not a valid format</div> 
+              </div> <!-- /Form-email -->
+  
+              <div class="form-group">
+                <label for="message2">Message</label>
+                <textarea class="form-control" id="message2" name="message" rows="5" placeholder="message">Message</textarea>
+  
+                <div class="error" id="err-message" style="display: none;">Please enter message</div>
+              </div> <!-- /col -->
+  
+              <div class="row">            
+                  <button type="submit" class="btn btn-primary btn-shadow btn-rounded w-md" id="send">Send</button>
+                </div> <!-- /col -->
+              </div> <!-- /row -->
+  
+            </form> <!-- /form -->
+          </div> <!-- end col -->
+  
+        </div> <!-- end row -->
+            
+      </div>
+</section>
+
+
+{% endblock content %}
