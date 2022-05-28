@@ -1,6 +1,7 @@
 
 from pathlib import Path
 from decouple import config
+import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -127,3 +128,5 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = "jeannineuwasee@gmail.com"
 EMAIL_HOST_PASSWORD = "EPASSWORD"
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
